@@ -6,7 +6,7 @@
 
 # https://cloud.spring.io/spring-cloud-static/Greenwich.SR1/single/spring-cloud.html
 server:
-  port: 8008
+  port: 8000
   servlet:
     context-path: / # web上下文
 management:
