@@ -1,8 +1,12 @@
 dbname: dev-db
-
+# docker run --name some-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql
 spring:
   datasource:
-    url: jdbc:h2:mem:readinglist;DB_CLOSE_ON_EXIT=FALSE
-    username: dbuser # dbpass
-    password: "{cipher}96490261367abfca52f1c98f1d766ceb280c20ea9485208da40f6c965bf026e1"
-    driver-class-name: org.h2.Driver
+    url: jdbc:mysql://127.0.0.1:3306/readinglist
+    username: root # root
+    password: "{cipher}6c8504a6c0ee2351cd3d35e43dc3b26dd850a296d9020521d91300572b152fda"
+    driver-class-name: com.mysql.jdbc.Driver
+    max-idle: 10
+    max-wait: 10000
+    min-idle: 5
+    initial-size: 5
