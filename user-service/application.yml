@@ -19,5 +19,3 @@ management:
         include: "*"
   server:
     port: 8000 # endpoint端口
-
-dbname: default-db--application.xml
